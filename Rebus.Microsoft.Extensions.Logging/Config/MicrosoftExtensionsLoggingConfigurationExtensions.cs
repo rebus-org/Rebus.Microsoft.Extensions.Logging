@@ -10,13 +10,24 @@ namespace Rebus.Config
     public static class MicrosoftExtensionsLoggingConfigurationExtensions
     {
         /// <summary>
-        /// Configures Rebus to use Serilog for all of its internal logging, deriving its loggers from the given <see cref="ILogger"/> base logger
+        /// Configures Rebus to use Microsoft Extensions Logging for all of its internal logging, used the given <paramref name="logger"/> for everything
         /// </summary>
         public static void MicrosoftExtensionsLogging(this RebusLoggingConfigurer configurer, ILogger logger)
         {
             if (configurer == null) throw new ArgumentNullException(nameof(configurer));
             if (logger == null) throw new ArgumentNullException(nameof(logger));
             configurer.Use(new MicrosoftExtensionsLoggingLoggerFactory(logger));
+        }
+
+        /// <summary>
+        /// Configures Rebus to use Microsoft Extensions Logging for all of its internal logging, used the given <paramref name="loggerFactory"/> to create
+        /// typed loggers to use
+        /// </summary>
+        public static void MicrosoftExtensionsLogging(this RebusLoggingConfigurer configurer, ILoggerFactory loggerFactory)
+        {
+            if (configurer == null) throw new ArgumentNullException(nameof(configurer));
+            if (loggerFactory == null) throw new ArgumentNullException(nameof(loggerFactory));
+            configurer.Use(new MicrosoftExtensionsLoggingLoggerFactory(loggerFactory));
         }
     }
 }

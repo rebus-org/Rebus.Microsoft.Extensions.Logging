@@ -8,6 +8,22 @@ Provides a Microsoft Extensions Logging logging integration for [Rebus](https://
 
 ---
 
+Like this:
+
+```csharp
+var loggerFactory = new LoggerFactory()
+	.AddConsole();
+
+Configure.With(...)
+	.Logging(l => l.MicrosoftExtensionsLogging(loggerFactory))
+	.Transport(t => t.Use(...))
+	.(...)
+	.Start();
+```
+
+or like this:
+
+
 ```csharp
 var logger = new LoggerFactory()
 	.AddConsole()

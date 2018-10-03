@@ -10,14 +10,13 @@ namespace TestApp
     {
         static void Main()
         {
-            var logger = new LoggerFactory()
-                .AddConsole()
-                .CreateLogger<Program>();
+            var loggerFactory = new LoggerFactory()
+                .AddConsole();
 
             using (var activator = new BuiltinHandlerActivator())
             {
                 Configure.With(activator)
-                    .Logging(l => l.MicrosoftExtensionsLogging(logger))
+                    .Logging(l => l.MicrosoftExtensionsLogging(loggerFactory))
                     .Transport(t => t.UseInMemoryTransport(new InMemNetwork(), "logging-test"))
                     .Start();
 

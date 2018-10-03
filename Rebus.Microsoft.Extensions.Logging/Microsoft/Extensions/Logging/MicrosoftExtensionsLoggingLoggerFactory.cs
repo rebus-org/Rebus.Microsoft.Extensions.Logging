@@ -6,16 +6,24 @@ namespace Rebus.Microsoft.Extensions.Logging
 {
     class MicrosoftExtensionsLoggingLoggerFactory : AbstractRebusLoggerFactory
     {
+        readonly ILoggerFactory _loggerFactory;
         readonly ILogger _logger;
 
         public MicrosoftExtensionsLoggingLoggerFactory(ILogger logger)
         {
-            _logger = logger;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
+        public MicrosoftExtensionsLoggingLoggerFactory(ILoggerFactory loggerFactory)
+        {
+            _loggerFactory = loggerFactory ?? throw new ArgumentNullException(nameof(loggerFactory));
         }
 
         protected override ILog GetLogger(Type type)
         {
-            return new MicrosoftExtensionsLoggingLogger(_logger, RenderString);
+            return _loggerFactory != null
+                ? new MicrosoftExtensionsLoggingLogger(_loggerFactory.CreateLogger(type), RenderString)
+                : new MicrosoftExtensionsLoggingLogger(_logger, RenderString);
         }
 
         class MicrosoftExtensionsLoggingLogger : ILog
