@@ -10,4 +10,4 @@ before_build:
   - appveyor-retry dotnet restore -v Minimal
 
 build_script:
-  - dotnet build Rebus.Serilog -c Release 
+  - dotnet build Rebus.Microsoft.Extensions.Logging -c Release 
