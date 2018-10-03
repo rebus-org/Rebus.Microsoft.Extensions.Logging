@@ -8,24 +8,14 @@ Provides a Serilog logging integration for [Rebus](https://github.com/rebus-org/
 
 ---
 
-Do it like this if you just want Rebus to use your global Serilog logger directly:
-
 ```csharp
+var logger = new LoggerFactory()
+	.AddConsole()
+	.CreateLogger<Program>();
+
 Configure.With(...)
-	.Logging(l => l.Serilog())
+	.Logging(l => l.MicrosoftExtensionsLogging(logger))
 	.Transport(t => t.Use(...))
-	.(...)
-	.Start();
-```
-
-or like this if you want to customize it:
-
-```csharp
-var logger = Log.ForContext("queue", queueName);
-
-Configure.With(...)
-	.Logging(l => l.Serilog(logger))
-	.Transport(t => t.Use(..., queueName))
 	.(...)
 	.Start();
 ```
