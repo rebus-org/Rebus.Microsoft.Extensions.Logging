@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Logging;
 using Rebus.Microsoft.Extensions.Logging;
+// ReSharper disable UnusedMember.Global
 
 namespace Rebus.Config
 {

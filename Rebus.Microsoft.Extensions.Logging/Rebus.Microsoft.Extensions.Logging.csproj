@@ -41,7 +41,7 @@
     <None Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="microsoft.extensions.logging" Version="2.1.1" />
+    <PackageReference Include="microsoft.extensions.logging" Version="2.2.0" />
     <PackageReference Include="rebus" Version="4.0.0" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

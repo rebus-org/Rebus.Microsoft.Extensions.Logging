@@ -4,3 +4,6 @@
 
 * Test release
 
+## 1.0.0
+
+* Update Microsoft.Extensions.Logging dependency to version 2.2.0
