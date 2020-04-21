@@ -10,4 +10,6 @@
 * Downgrade Microsoft.Extensions.Logging dependency to version 2.0.0, because there's no need to REQUIRE 2.2.0
 
 ## 2.0.0
-* Upgrade Rebus dependency to 6.1 and aspnet.core in a sample application to 3.1
+* Upgrade Rebus dependency to 6.1 and aspnet.core in a sample application to 3.1 - thanks [rsivanov]
+
+[rsivanov]: https://github.com/rsivanov
