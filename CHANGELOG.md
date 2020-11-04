@@ -12,4 +12,7 @@
 ## 2.0.0
 * Upgrade Rebus dependency to 6.1 and aspnet.core in a sample application to 3.1 - thanks [rsivanov]
 
+## 3.0.0-a1
+* Add additional targets for .NET Standard 2.1 and .NET 5 - thanks [dariogriffo]
+
 [rsivanov]: https://github.com/rsivanov
