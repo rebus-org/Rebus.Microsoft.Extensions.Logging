@@ -38,10 +38,6 @@
     <DocumentationFile>bin\Release\Rebus.Microsoft.Extensions.Logging.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Properties\AssemblyInfo.cs" />
-    <None Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="rebus" Version="[6.1.0,)" />
   </ItemGroup>
 
@@ -56,9 +52,4 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
     <PackageReference Include="microsoft.extensions.logging" Version="[5.0.0-rc.2.20475.5,6)" />
   </ItemGroup>
-
-
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="$(ProjectDir)..\scripts\patch_assemblyinfo.cmd $(ProjectDir)" />
-  </Target>
 </Project>
