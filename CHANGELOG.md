@@ -15,4 +15,7 @@
 ## 3.0.0-a1
 * Add additional targets for .NET Standard 2.1 and .NET 5 - thanks [dariogriffo]
 
+## 4.0.0-a1
+* Add additional target for .NET 6 - thanks [dannythunder]
+
 [rsivanov]: https://github.com/rsivanov
