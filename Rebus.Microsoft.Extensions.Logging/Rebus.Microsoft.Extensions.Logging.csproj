@@ -10,7 +10,7 @@
     <Authors>mookid8000</Authors>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://rebus.fm/what-is-rebus/</PackageProjectUrl>
-    <Copyright>Copyright 2012-2016</Copyright>
+    <Copyright>Copyright Rebus FM ApS 2012</Copyright>
     <PackageTags>rebus microsoft extensions logging</PackageTags>
     <PackageIconUrl></PackageIconUrl>
     <PackageDescription>Microsoft.Extensions.Logging-based logging integration for Rebus</PackageDescription>
