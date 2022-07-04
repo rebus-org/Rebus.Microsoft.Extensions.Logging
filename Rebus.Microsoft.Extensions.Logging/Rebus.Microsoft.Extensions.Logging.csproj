@@ -5,7 +5,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Rebus</RootNamespace>
     <AssemblyName>Rebus.Microsoft.Extensions.Logging</AssemblyName>
-   <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Authors>mookid8000</Authors>
     <PackageLicenseUrl></PackageLicenseUrl>
@@ -43,20 +43,8 @@
     <PackageReference Include="rebus" Version="[6.1.0,)" />
   </ItemGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="microsoft.extensions.logging" Version="[2.0.0,3)" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
-    <PackageReference Include="microsoft.extensions.logging" Version="[3.0.0,5)" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
-    <PackageReference Include="microsoft.extensions.logging" Version="[5.0.0-rc.2.20475.5,6)" />
-  </ItemGroup>
-
     <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
-        <PackageReference Include="microsoft.extensions.logging" Version="[7.0.0-preview.1.22076.8,)" />
+        <PackageReference Include="microsoft.extensions.logging" Version="[6.0.0,7.0.0)" />
     </ItemGroup>
 
   <ItemGroup>
