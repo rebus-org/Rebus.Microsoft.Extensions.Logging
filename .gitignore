@@ -21,6 +21,8 @@ _ReSharper.*
 _NCrunch_*
 *.user
 *.backup
+.idea
+.idea/*
 
 # MS Guideline
 **/packages/*

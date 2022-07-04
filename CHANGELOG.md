@@ -12,4 +12,7 @@
 ## 2.0.0
 * Upgrade Rebus dependency to 6.1 and aspnet.core in a sample application to 3.1 - thanks [rsivanov]
 
+## 3.0.0
+* Upgrade Rebus dependency to 6.6.5 and aspnet.core in a sample application to 6.0 - thanks [dannythunder]
+
 [rsivanov]: https://github.com/rsivanov
