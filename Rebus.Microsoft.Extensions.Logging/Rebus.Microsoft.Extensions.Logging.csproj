@@ -5,7 +5,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Rebus</RootNamespace>
     <AssemblyName>Rebus.Microsoft.Extensions.Logging</AssemblyName>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Authors>mookid8000</Authors>
     <PackageLicenseUrl>https://raw.githubusercontent.com/rebus-org/Rebus/master/LICENSE.md</PackageLicenseUrl>
