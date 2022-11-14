@@ -14,5 +14,6 @@
 
 ## 3.0.0
 * Upgrade Rebus dependency to 6.6.5 and aspnet.core in a sample application to 6.0 - thanks [dannythunder]
+* Extend allowed Microsoft.Extensions.Logging version range to include .NET 7
 
 [rsivanov]: https://github.com/rsivanov

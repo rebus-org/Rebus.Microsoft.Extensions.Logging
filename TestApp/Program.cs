@@ -4,22 +4,21 @@ using Rebus.Activation;
 using Rebus.Config;
 using Rebus.Transport.InMem;
 
-namespace TestApp
+namespace TestApp;
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
-        {
-            var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+        var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
 
-            using var activator = new BuiltinHandlerActivator();
-            Configure.With(activator)
-                .Logging(l => l.MicrosoftExtensionsLogging(loggerFactory))
-                .Transport(t => t.UseInMemoryTransport(new InMemNetwork(), "logging-test"))
-                .Start();
+        using var activator = new BuiltinHandlerActivator();
+        Configure.With(activator)
+            .Logging(l => l.MicrosoftExtensionsLogging(loggerFactory))
+            .Transport(t => t.UseInMemoryTransport(new InMemNetwork(), "logging-test"))
+            .Start();
 
-            Console.WriteLine("Press ENTER to quit");
-            Console.ReadLine();
-        }
+        Console.WriteLine("Press ENTER to quit");
+        Console.ReadLine();
     }
 }
