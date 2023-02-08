@@ -16,4 +16,8 @@
 * Upgrade Rebus dependency to 6.6.5 and aspnet.core in a sample application to 6.0 - thanks [dannythunder]
 * Extend allowed Microsoft.Extensions.Logging version range to include .NET 7
 
+## 4.0.0
+* Remove package constraints because there were no reason to constrain them - thanks [brunomartinspro]
+
+[brunomartinspro]: https://github.com/brunomartinspro
 [rsivanov]: https://github.com/rsivanov
