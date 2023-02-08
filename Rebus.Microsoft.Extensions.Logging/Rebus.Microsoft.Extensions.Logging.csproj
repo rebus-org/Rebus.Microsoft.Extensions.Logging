@@ -24,10 +24,7 @@
 	<ItemGroup>
 		<PackageReference Include="rebus" Version="6.6.5" />
 	</ItemGroup>
-	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-		<PackageReference Include="microsoft.extensions.logging" Version="[6,7)" />
-	</ItemGroup>
-	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
-		<PackageReference Include="microsoft.extensions.logging" Version="[7,8)" />
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
 	</ItemGroup>
 </Project>
