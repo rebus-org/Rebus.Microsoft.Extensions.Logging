@@ -3,28 +3,31 @@
 		<OutputType>Library</OutputType>
 		<RootNamespace>Rebus</RootNamespace>
 		<AssemblyName>Rebus.Microsoft.Extensions.Logging</AssemblyName>
-		<LangVersion>10</LangVersion>
-		<TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>11</LangVersion>
 		<Authors>mookid8000</Authors>
 		<PackageProjectUrl>https://rebus.fm/what-is-rebus/</PackageProjectUrl>
-		<Copyright>Copyright Rebus FM ApS 2012</Copyright>
+		<Copyright>Copyright 2012 Rebus FM ApS</Copyright>
 		<PackageTags>rebus microsoft extensions logging</PackageTags>
 		<PackageDescription>Microsoft.Extensions.Logging-based logging integration for Rebus</PackageDescription>
 		<RepositoryUrl>https://github.com/rebus-org/Rebus.Microsoft.Extensions.Logging</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageIcon>little_rebusbus2_copy-500x500.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Include="..\artwork\little_rebusbus2_copy-500x500.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\artwork\little_rebusbus2_copy-500x500.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="rebus" Version="6.6.5" />
-	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+		<PackageReference Include="rebus" Version="8.0.0-alpha01" />
+		<PackageReference Include="microsoft.extensions.logging" Version="6.0.0" />
 	</ItemGroup>
 </Project>
