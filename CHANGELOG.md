@@ -19,7 +19,7 @@
 ## 4.0.0
 * Remove package constraints because there were no reason to constrain them - thanks [brunomartinspro]
 
-## 5.0.0-alpha01
+## 5.0.0
 * Update to Rebus 8
 
 [brunomartinspro]: https://github.com/brunomartinspro
