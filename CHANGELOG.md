@@ -22,5 +22,9 @@
 ## 5.0.0
 * Update to Rebus 8
 
+## 5.1.0
+* Add support for .NET 9 - thanks [ronaldbarendse]
+
 [brunomartinspro]: https://github.com/brunomartinspro
+[ronaldbarendse]: https://github.com/ronaldbarendse
 [rsivanov]: https://github.com/rsivanov
