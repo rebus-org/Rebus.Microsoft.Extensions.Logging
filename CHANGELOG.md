@@ -25,6 +25,10 @@
 ## 5.1.0
 * Add support for .NET 9 - thanks [ronaldbarendse]
 
+## 5.2.0
+* Add support for .NET 10 - thanks [CGaskell]
+
 [brunomartinspro]: https://github.com/brunomartinspro
+[CGaskell]: https://github.com/CGaskell
 [ronaldbarendse]: https://github.com/ronaldbarendse
 [rsivanov]: https://github.com/rsivanov
